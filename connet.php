@@ -15,6 +15,7 @@ if ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['SERVER_NAME'] == 'localhos
 }
 
 $conn = new mysqli($servername, $username, $password, $dbname);
+$db = $conn;
 
 // Check connection
 if ($conn->connect_error) {
